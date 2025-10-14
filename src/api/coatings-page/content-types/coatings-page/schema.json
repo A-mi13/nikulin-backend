@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coatings_pages",
+  "info": {
+    "singularName": "coatings-page",
+    "pluralName": "coatings-pages",
+    "displayName": "Страница функциональные покрытия",
+    "description": "Страница функциональных покрытий"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "introTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "introContent": {
+      "type": "richtext"
+    },
+    "benefitsTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "benefits": {
+      "type": "component",
+      "component": "coatings.benefit-card",
+      "repeatable": true
+    },
+    "applicationsTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "applications": {
+      "type": "component",
+      "component": "coatings.application-item",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "coatings.cta-block",
+      "repeatable": false
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}

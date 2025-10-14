@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_faq_faq_items",
+  "info": {
+    "displayName": "FAQ Item",
+    "description": "Вопрос и ответ для FAQ"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "maxLength": 255,
+      "required": false
+    },
+    "answer": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}

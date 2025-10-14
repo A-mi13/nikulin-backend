@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_coatings_benefit_cards",
+  "info": {
+    "displayName": "Benefit Card",
+    "description": "Карточка преимущества"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
+

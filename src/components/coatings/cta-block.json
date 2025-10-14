@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_coatings_cta_blocks",
+  "info": {
+    "displayName": "CTA Block",
+    "description": "Блок призыва к действию"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "buttonText": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "buttonLink": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}
+

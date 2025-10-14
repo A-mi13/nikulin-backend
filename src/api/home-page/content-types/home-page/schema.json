@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Главная страница",
+    "description": "Главная страница сайта"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "heroDescription": {
+      "type": "richtext"
+    },
+    "energyTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "energyDescription": {
+      "type": "richtext"
+    },
+    "energyApplications": {
+      "type": "component",
+      "component": "coatings.application-item",
+      "repeatable": true
+    },
+    "crystalsTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "crystalsDescription": {
+      "type": "richtext"
+    },
+    "crystalsFaq": {
+      "type": "component",
+      "component": "faq.faq-item",
+      "repeatable": true
+    },
+    "crystalsApplications": {
+      "type": "component",
+      "component": "coatings.application-item",
+      "repeatable": true
+    },
+    "workProcessTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "workProcessDescription": {
+      "type": "richtext"
+    },
+    "workProcessFaq": {
+      "type": "component",
+      "component": "faq.faq-item",
+      "repeatable": true
+    },
+    "faqTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "faqDescription": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "component": "coatings.cta-block",
+      "repeatable": false
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}

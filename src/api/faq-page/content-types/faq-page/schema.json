@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_pages",
+  "info": {
+    "singularName": "faq-page",
+    "pluralName": "faq-pages",
+    "displayName": "Страницы вопросы и ответы",
+    "description": "Страница с часто задаваемыми вопросами"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Есть вопросы? Задавайте!",
+      "maxLength": 255
+    },
+    "description": {
+      "type": "text"
+    },
+    "faqItems": {
+      "type": "component",
+      "component": "faq.faq-item",
+      "repeatable": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}

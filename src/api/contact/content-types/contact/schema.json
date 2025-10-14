@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Все контакты",
+    "description": "Контактная информация компании"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 255,
+      "required": false
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 50,
+      "required": false
+    },
+    "address": {
+      "type": "text",
+      "required": false
+    },
+    "website": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "workingHours": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text"
+    },
+    "isPrimary": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

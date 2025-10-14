@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "legal_documents",
+  "info": {
+    "singularName": "legal-document",
+    "pluralName": "legal-documents",
+    "displayName": "Правовые документы",
+    "description": "Политика конфиденциальности, пользовательское соглашение и другие правовые документы"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "privacy",
+        "terms",
+        "cookies",
+        "other"
+      ],
+      "required": true,
+      "default": "other"
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

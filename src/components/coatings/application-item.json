@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_coatings_application_items",
+  "info": {
+    "displayName": "Application Item",
+    "description": "Область применения"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
+

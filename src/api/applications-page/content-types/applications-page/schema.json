@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications_pages",
+  "info": {
+    "singularName": "applications-page",
+    "pluralName": "applications-pages",
+    "displayName": "Страница применение",
+    "description": "Страница применения жидких кристаллов"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "introTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "introContent": {
+      "type": "richtext"
+    },
+    "applicationsTitle": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "applications": {
+      "type": "component",
+      "component": "coatings.application-item",
+      "repeatable": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}
