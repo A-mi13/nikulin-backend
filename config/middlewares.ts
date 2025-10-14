@@ -39,6 +39,11 @@ export default [
         'https://nikulin-site.vercel.app',
         'https://*.vercel.app',
         'https://*.onrender.com',
+        // продовый фронт и его www-вариант
+        'https://mipovoteh.ru',
+        'https://www.mipovoteh.ru',
+        // Strapi Cloud домен
+        'https://superb-friends-d500d8ce36.strapiapp.com',
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
