@@ -704,31 +704,6 @@ export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiGalleryItemGalleryItem extends Struct.CollectionTypeSchema {
-  collectionName: 'gallery_items';
-  info: {
-    description: 'Gallery items for certificates and awards';
-    displayName: 'Gallery Item';
-    pluralName: 'gallery-items';
-    singularName: 'gallery-item';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Schema.Attribute.String & Schema.Attribute.SetMinMaxLength<{
-      maxLength: 255;
-    }>;
-    description: Schema.Attribute.Text;
-    image: Schema.Attribute.Relation<'oneToOne', 'plugin::upload.file'>;
-    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-  };
-}
 
 export interface ApiLegalDocumentLegalDocument
   extends Struct.CollectionTypeSchema {
@@ -1362,7 +1337,6 @@ declare module '@strapi/strapi' {
       'api::contact.contact': ApiContactContact;
       'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::gallery-item.gallery-item': ApiGalleryItemGalleryItem;
       'api::legal-document.legal-document': ApiLegalDocumentLegalDocument;
       'api::technology-page.technology-page': ApiTechnologyPageTechnologyPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
